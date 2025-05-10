@@ -1,75 +1,95 @@
-COVID-19 Data Analysis with Pandas, Matplotlib, and Seaborn
-This project analyzes the OWID COVID-19 dataset using Python libraries to explore and visualize trends in cases, deaths, and other health indicators across multiple countries.
+# COVID-19 Data Analysis Project
 
-🎯 Objectives
-Clean and preprocess COVID-19 data.
+> Analysis of OWID COVID-19 dataset using Python libraries to explore and visualize global pandemic trends.
 
-Filter and focus on selected countries (Kenya, United States, India).
+## 🎯 Objectives
 
-Visualize trends in total cases, total deaths, and new daily cases.
+- Clean and preprocess COVID-19 data
+- Analyze data for selected countries (Kenya, United States, India)
+- Create visualizations for:
+  - Total cases and deaths
+  - Daily new cases
+  - Death rate analysis
+  - Top affected countries
+  - Variable correlations
 
-Calculate and analyze the COVID-19 death rate.
+## 🧰 Tech Stack
 
-Highlight top countries by total cases using bar charts.
+- **Python 3.x**
+- **Key Libraries:**
+  - Pandas (data manipulation)
+  - Matplotlib (basic plotting)
+  - Seaborn (advanced visualization)
 
-Optionally explore variable relationships using a heatmap.
+## ▶️ Getting Started
 
-🧰 Tools and Libraries Used
-Python 3
+### Prerequisites
 
-Pandas – for data manipulation and cleaning
+1. Python 3.x installed
+2. Required libraries: `pandas`, `matplotlib`, `seaborn`
 
-Matplotlib – for basic plotting
+### Installation
 
-Seaborn – for enhanced data visualization
+```bash
+pip install pandas matplotlib seaborn
+```
 
-▶️ How to Run the Project
-Download the Dataset:
-Get owid-covid-data.csv from Our World in Data and place it in your working directory.
+### Dataset Setup
 
-Run Jupyter Notebook:
+1. Download `owid-covid-data.csv` from [Our World in Data](https://ourworldindata.org/covid-deaths)
+2. Place the CSV file in your project directory
 
-Open Jupyter Notebook or JupyterLab.
+## 📊 Visualization Features
 
-Create a new notebook and copy in the code provided in logical steps:
+### 1. Line Charts
+- Track temporal trends in:
+  - Total COVID-19 cases
+  - Total deaths
+  - New daily cases
 
-Load and inspect the dataset.
+### 2. Bar Chart
+- Top 10 countries by total cases
+- Latest date comparison
 
-Filter countries.
+### 3. Heatmap
+- Correlation analysis between:
+  - Cases
+  - Deaths
+  - Reproduction rate
+  - Other health indicators
 
-Clean data and handle missing values.
+## 💡 Key Insights
 
-Plot visualizations.
+1. **Death Rate Variations**
+   - Differences across countries
+   - Impact of healthcare systems
+   - Effects of virus variants
 
-Run Each Cell Step by Step:
-The project is structured into logical steps:
+2. **Case Patterns**
+   - Clear visualization of pandemic waves
+   - Rolling averages for trend analysis
 
-Data loading and inspection
+3. **Data Quality**
+   - Missing value handling using:
+     - `dropna()`
+     - `fillna()`
+     - Interpolation methods
 
-Filtering and cleaning
+## 📝 Project Structure
 
-Plotting total cases, deaths, and daily new cases
+```
+project/
+│
+├── data/
+│   └── owid-covid-data.csv
+│
+├── notebooks/
+│   └── analysis.ipynb
+│
+└── README.md
+```
 
-Calculating death rate
+## 🤝 Contributing
 
-Bar chart and (optional) heatmap
-
-📊 Visualizations Included
-Line Charts:
-Track total COVID-19 cases, deaths, and new daily cases over time for selected countries.
-
-Bar Chart:
-Show top 10 countries by total cases on the latest date.
-
-Heatmap:
-Visual correlation analysis between key numerical features (cases, deaths, reproduction rate, etc.)
-
-💡 Insights and Reflections
-Death Rate Trends: The death rate varies across countries and time, revealing the impact of healthcare systems, virus variants, and interventions.
-
-Peaks in New Cases: Rolling averages of daily new cases highlight pandemic waves more clearly.
-
-Data Gaps: Handling missing values is essential — we use dropna(), fillna(), and interpolation for robustness.
-
-Visualization Power: Combining pandas, matplotlib, and seaborn allows quick exploratory data analysis with high clarity.
+Contributions welcome! Please feel free to submit a Pull Request.
 
